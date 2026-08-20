@@ -10,7 +10,6 @@
   /* ---------- Scroll progress + header state ---------- */
   const header = document.getElementById('siteHeader');
   const progressFill = document.getElementById('progressFill');
-  const heroLoader = document.querySelector('.hero-loader');
 
   let ticking = false;
   function onScroll() {
@@ -20,12 +19,6 @@
 
     if (progressFill) progressFill.style.transform = `scaleX(${pct / 100})`;
     if (header) header.classList.toggle('is-scrolled', scrollTop > 20);
-
-    if (heroLoader && !reduceMotion && scrollTop < window.innerHeight) {
-      const rot = scrollTop * 0.05;
-      const rise = scrollTop * 0.12;
-      heroLoader.style.transform = `translateY(calc(-50% - ${rise}px)) rotate(${rot}deg)`;
-    }
     ticking = false;
   }
   window.addEventListener('scroll', () => {
