@@ -177,16 +177,6 @@ p{ margin:0; }
     linear-gradient(180deg, rgba(13,14,10,.15) 0%, rgba(13,14,10,.4) 55%, var(--bg) 98%),
     linear-gradient(90deg, rgba(13,14,10,.78) 0%, rgba(13,14,10,.1) 48%, rgba(13,14,10,.55) 100%);
 }
-.hero-grid{
-  position:absolute; inset:-2px;
-  background-image:
-    linear-gradient(var(--line-soft) 1px, transparent 1px),
-    linear-gradient(90deg, var(--line-soft) 1px, transparent 1px);
-  background-size:64px 64px;
-  mask-image:radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 90%);
-  -webkit-mask-image:radial-gradient(ellipse 80% 60% at 50% 40%, black 40%, transparent 90%);
-  opacity:.45;
-}
 .hero-loader{
   position:absolute; right:-6%; top:50%;
   width:min(46vw, 560px); height:auto;
