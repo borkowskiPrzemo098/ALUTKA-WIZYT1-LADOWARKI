@@ -375,7 +375,7 @@ p{ margin:0; }
 }
 
 .price-col-name{
-  min-width:0;
+  min-width:0; flex-direction:column; align-items:flex-start; justify-content:center;
   font-family:var(--font-display); font-weight:600; letter-spacing:.02em; text-transform:uppercase; font-size:1.05rem;
   color:var(--fg);
 }
