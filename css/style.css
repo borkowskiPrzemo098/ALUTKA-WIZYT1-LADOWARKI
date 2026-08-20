@@ -151,7 +151,7 @@ p{ margin:0; }
 .btn-primary:hover{ background:var(--tan-soft); transform:translateY(-2px); }
 .btn-ghost{ border-color:var(--line); color:var(--fg); }
 .btn-ghost:hover{ border-color:var(--tan); color:var(--tan-soft); transform:translateY(-2px); }
-.btn-outline{ border-color:var(--olive); color:var(--fg); width:100%; margin-top:28px; }
+.btn-outline{ border-color:var(--olive); color:var(--fg); }
 .btn-outline:hover{ background:var(--olive); color:var(--bg); }
 .btn-block{ width:100%; }
 
