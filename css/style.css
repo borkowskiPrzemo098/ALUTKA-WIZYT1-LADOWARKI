@@ -192,6 +192,22 @@ p{ margin:0; }
   margin-top:38px; display:flex; gap:16px; flex-wrap:wrap;
   opacity:0; animation:fadeUp .9s var(--ease-out-expo) .56s forwards;
 }
+.hero-facts{
+  margin-top:36px; padding-top:20px; max-width:52ch;
+  border-top:1px solid rgba(216,195,151,.2);
+  font-family:var(--font-mono); font-size:.78rem; letter-spacing:.04em; color:var(--fg-dim);
+  opacity:0; animation:fadeUp .9s var(--ease-out-expo) .7s forwards;
+}
+.hero-sidemark{
+  position:absolute; right:28px; bottom:90px; z-index:1;
+  margin:0; writing-mode:vertical-rl; transform:rotate(180deg);
+  font-family:var(--font-mono); font-size:.72rem; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--tan); opacity:0; animation:fadeIn .9s var(--ease-out-expo) .85s forwards;
+}
+@keyframes fadeIn{ from{ opacity:0; } to{ opacity:1; } }
+@media (max-width: 980px){
+  .hero-sidemark{ display:none; }
+}
 @keyframes fadeUp{ from{ opacity:0; transform:translateY(22px);} to{ opacity:1; transform:translateY(0);} }
 
 .scroll-cue{
