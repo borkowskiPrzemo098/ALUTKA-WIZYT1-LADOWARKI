@@ -62,8 +62,8 @@
   <section class="section about" id="projekt">
     <div class="wrap about-grid">
       <div class="about-visual reveal" data-reveal>
-        <!-- Zdjęcie tymczasowe (Wikimedia Commons, CC0, MukhtaromST) — do podmiany na zdjęcie własnego warsztatu -->
-        <div class="about-photo" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/3D_Printing.jpg/1920px-3D_Printing.jpg')"></div>
+        <!-- Zdjęcie tymczasowe (Wikimedia Commons, CC BY 2.0, John Abella) — do podmiany na zdjęcie własnego warsztatu -->
+        <div class="about-photo" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Prusa_i3_-_RepRap_3D_printer_printing.jpg/1920px-Prusa_i3_-_RepRap_3D_printer_printing.jpg')"></div>
         <div class="printer-frame">
           <svg viewBox="0 0 320 320" class="printer-svg" aria-hidden="true">
             <rect x="30" y="40" width="260" height="200" rx="4" fill="none" stroke="currentColor" stroke-width="2"/>
@@ -164,40 +164,35 @@
         <h2 class="reveal" data-reveal>Cennik</h2>
         <p class="section-sub reveal" data-reveal data-delay="1">Bez pośredników, bez narzutów sklepowych — cena prosto z warsztatu.</p>
       </div>
-      <table class="price-table reveal" data-reveal>
-        <thead>
-          <tr>
-            <th scope="col">Model</th>
-            <th scope="col">Pojemność</th>
-            <th scope="col">Realizacja</th>
-            <th scope="col">Cena</th>
-            <th scope="col" class="sr-only">Zamówienie</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">P-SERIA<span>pistoletowa, 1 kolor do wyboru</span></th>
-            <td>40–90 BB</td>
-            <td>24–48h</td>
-            <td class="price-cell">39 zł</td>
-            <td><a href="#kontakt" class="btn btn-outline btn-row">Zamów</a></td>
-          </tr>
-          <tr class="price-row-primary">
-            <th scope="row">M-SERIA<span>karabinkowa, rabat 10% od 3 szt.</span></th>
-            <td>120–450 BB</td>
-            <td>24–48h</td>
-            <td class="price-cell">59 zł</td>
-            <td><a href="#kontakt" class="btn btn-primary btn-row">Zamów</a></td>
-          </tr>
-          <tr>
-            <th scope="row">DRUM-SERIA<span>bębnowa, PETG-CF</span></th>
-            <td>1200–2500 BB</td>
-            <td>48–72h</td>
-            <td class="price-cell">89 zł</td>
-            <td><a href="#kontakt" class="btn btn-outline btn-row">Zamów</a></td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="price-rows reveal" data-reveal role="table" aria-label="Cennik ładowarek">
+        <div class="price-row price-row-head" role="row" aria-hidden="true">
+          <span class="price-col-name">Model</span>
+          <span class="price-col-spec">Pojemność</span>
+          <span class="price-col-spec">Realizacja</span>
+          <span class="price-col-price">Cena</span>
+        </div>
+        <div class="price-row" role="row">
+          <span class="price-col-name" role="cell">P-SERIA<span class="price-sub">pistoletowa, 1 kolor do wyboru</span></span>
+          <span class="price-col-spec" role="cell"><span class="price-label">Pojemność</span>40–90 BB</span>
+          <span class="price-col-spec" role="cell"><span class="price-label">Realizacja</span>24–48h</span>
+          <span class="price-col-price" role="cell">39 zł</span>
+          <a href="#kontakt" class="btn btn-outline btn-row" role="cell">Zamów</a>
+        </div>
+        <div class="price-row price-row-primary" role="row">
+          <span class="price-col-name" role="cell">M-SERIA<span class="price-sub">karabinkowa, rabat 10% od 3 szt.</span></span>
+          <span class="price-col-spec" role="cell"><span class="price-label">Pojemność</span>120–450 BB</span>
+          <span class="price-col-spec" role="cell"><span class="price-label">Realizacja</span>24–48h</span>
+          <span class="price-col-price" role="cell">59 zł</span>
+          <a href="#kontakt" class="btn btn-primary btn-row" role="cell">Zamów</a>
+        </div>
+        <div class="price-row" role="row">
+          <span class="price-col-name" role="cell">DRUM-SERIA<span class="price-sub">bębnowa, PETG-CF</span></span>
+          <span class="price-col-spec" role="cell"><span class="price-label">Pojemność</span>1200–2500 BB</span>
+          <span class="price-col-spec" role="cell"><span class="price-label">Realizacja</span>48–72h</span>
+          <span class="price-col-price" role="cell">89 zł</span>
+          <a href="#kontakt" class="btn btn-outline btn-row" role="cell">Zamów</a>
+        </div>
+      </div>
       <p class="pricing-footnote reveal" data-reveal>Projekt niestandardowy pod Twój magazynek? <a href="#kontakt">Napisz</a> — wycena w 24h.</p>
     </div>
   </section>
@@ -215,7 +210,7 @@
       <figure class="gallery-item reveal" data-reveal><div class="gallery-plate g-1" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Airsoft_BB_loader.JPG/960px-Airsoft_BB_loader.JPG')"></div><figcaption>Prototyp speedloadera</figcaption></figure>
       <figure class="gallery-item reveal" data-reveal data-delay="1"><div class="gallery-plate g-2" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Airsoft_G36C_magazine.JPG/960px-Airsoft_G36C_magazine.JPG')"></div><figcaption>Magazynek karabinkowy</figcaption></figure>
       <figure class="gallery-item reveal" data-reveal data-delay="2"><div class="gallery-plate g-3" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/AirsoftRockField.jpg/960px-AirsoftRockField.jpg')"></div><figcaption>Test na polu gry</figcaption></figure>
-      <figure class="gallery-item reveal" data-reveal><div class="gallery-plate g-4" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/3D_Printing.jpg/960px-3D_Printing.jpg')"></div><figcaption>Warsztat — drukarki w pracy</figcaption></figure>
+      <figure class="gallery-item reveal" data-reveal><div class="gallery-plate g-4" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Prusa_i3_-_RepRap_3D_printer_printing.jpg/960px-Prusa_i3_-_RepRap_3D_printer_printing.jpg')"></div><figcaption>Warsztat — drukarki w pracy</figcaption></figure>
       <figure class="gallery-item reveal" data-reveal data-delay="1"><div class="gallery-plate g-5" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6b/M_90.jpg')"></div><figcaption>Gracz w akcji</figcaption></figure>
       <figure class="gallery-item reveal" data-reveal data-delay="2"><div class="gallery-plate g-6" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Airsoft_assault_rifle_dual_magazine_holder_side.JPG/960px-Airsoft_assault_rifle_dual_magazine_holder_side.JPG')"></div><figcaption>Uchwyt na magazynki</figcaption></figure>
     </div>
@@ -305,7 +300,7 @@
       <a href="#kontakt">Kontakt</a>
     </nav>
     <p class="footer-legal">© <span id="year"></span> AIRLOAD. Wszystkie prawa zastrzeżone. Produkt niezależny, niezwiązany z żadnym producentem replik.</p>
-    <p class="footer-credits">Zdjęcia tymczasowe (do podmiany), Wikimedia Commons: PEO Soldier (PD), MukhtaromST (CC0), BrokenSphere (CC BY-SA 3.0), Michael Brown „UNHchabo” (CC BY 2.5), Mkallgren (CC BY-SA 3.0).</p>
+    <p class="footer-credits">Zdjęcia tymczasowe (do podmiany), Wikimedia Commons: PEO Soldier (PD), John Abella (CC BY 2.0), BrokenSphere (CC BY-SA 3.0), Michael Brown „UNHchabo” (CC BY 2.5), Mkallgren (CC BY-SA 3.0).</p>
   </div>
 </footer>
 
