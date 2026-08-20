@@ -151,7 +151,7 @@ p{ margin:0; }
 .btn-primary:hover{ background:var(--tan-soft); transform:translateY(-2px); }
 .btn-ghost{ border-color:var(--line); color:var(--fg); }
 .btn-ghost:hover{ border-color:var(--tan); color:var(--tan-soft); transform:translateY(-2px); }
-.btn-outline{ border-color:var(--olive); color:var(--fg); }
+.btn-outline{ border-color:var(--olive); color:var(--fg); background:rgba(216,195,151,.08); }
 .btn-outline:hover{ background:var(--olive); color:var(--bg); }
 .btn-block{ width:100%; }
 
@@ -323,7 +323,8 @@ p{ margin:0; }
 .price-rows{
   width:100%; max-width:100%;
   border:1px solid var(--line); border-radius:4px; overflow:hidden;
-  background:rgba(13,14,10,.7);
+  background:var(--bg-alt);
+  box-shadow:0 30px 60px -24px rgba(0,0,0,.7);
 }
 
 /* Desktop / tablet: true grid, every row's cells share one column template — perfect alignment */
