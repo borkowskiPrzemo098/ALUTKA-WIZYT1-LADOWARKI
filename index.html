@@ -68,16 +68,6 @@
     <div class="scroll-cue" aria-hidden="true"><span></span></div>
   </section>
 
-  <!-- MARQUEE STRIP -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span>WŁASNY PROJEKT</span><span>·</span><span>DRUK 3D W DOMU</span><span>·</span><span>SZYBKA REALIZACJA</span><span>·</span><span>SPRAWDZONE NA POLU BITWY</span><span>·</span>
-      <span>WŁASNY PROJEKT</span><span>·</span><span>DRUK 3D W DOMU</span><span>·</span><span>SZYBKA REALIZACJA</span><span>·</span><span>SPRAWDZONE NA POLU BITWY</span><span>·</span>
-      <span>WŁASNY PROJEKT</span><span>·</span><span>DRUK 3D W DOMU</span><span>·</span><span>SZYBKA REALIZACJA</span><span>·</span><span>SPRAWDZONE NA POLU BITWY</span><span>·</span>
-      <span>WŁASNY PROJEKT</span><span>·</span><span>DRUK 3D W DOMU</span><span>·</span><span>SZYBKA REALIZACJA</span><span>·</span><span>SPRAWDZONE NA POLU BITWY</span><span>·</span>
-    </div>
-  </div>
-
   <!-- O PROJEKCIE -->
   <section class="section about" id="projekt">
     <div class="wrap about-grid">
@@ -102,20 +92,20 @@
       <div class="about-copy">
         <h2 class="reveal" data-reveal>Zrobione przez gracza,<br>dla graczy.</h2>
         <p class="lead reveal" data-reveal data-delay="1">To nie jest produkt korporacji. To mój własny projekt — zaprojektowany od zera w CAD, testowany na treningach i turniejach, drukowany osobiście na drukarkach 3D w moim domu. Każda ładowarka przechodzi przez moje ręce, zanim trafi do Twojego ekwipunku.</p>
-        <div class="about-stats reveal" data-reveal data-delay="2">
-          <div class="stat">
-            <span class="stat-num" data-count="100">0</span><span class="stat-suffix">%</span>
-            <span class="stat-label">Własny projekt i produkcja</span>
+        <dl class="manifest reveal" data-reveal data-delay="2">
+          <div class="manifest-row">
+            <dt>Projekt i produkcja</dt>
+            <dd>w całości własna, od CAD po druk</dd>
           </div>
-          <div class="stat">
-            <span class="stat-num" data-count="48">0</span><span class="stat-suffix">h</span>
-            <span class="stat-label">Standardowy czas realizacji</span>
+          <div class="manifest-row">
+            <dt>Czas realizacji</dt>
+            <dd>zwykle 24–48 godzin od zamówienia</dd>
           </div>
-          <div class="stat">
-            <span class="stat-num" data-count="600">0</span><span class="stat-suffix">+</span>
-            <span class="stat-label">Wydrukowanych sztuk</span>
+          <div class="manifest-row">
+            <dt>Historia</dt>
+            <dd>ponad 600 sztuk wydrukowanych i sprawdzonych w grze</dd>
           </div>
-        </div>
+        </dl>
       </div>
     </div>
   </section>
@@ -127,47 +117,48 @@
         <h2 class="reveal" data-reveal>Oferta</h2>
         <p class="section-sub reveal" data-reveal data-delay="1">Trzy modele, jeden cel: kulka w komorze, zanim przeciwnik zdąży się schować.</p>
       </div>
-      <div class="offer-grid">
+      <div class="offer-layout">
 
-        <article class="offer-card reveal" data-reveal>
-          <div class="offer-visual">
-            <svg viewBox="0 0 200 200" aria-hidden="true"><rect x="70" y="20" width="60" height="140" rx="6" fill="none" stroke="currentColor" stroke-width="2"/><line x1="80" y1="45" x2="120" y2="45" stroke="currentColor" stroke-width="1.6"/><line x1="80" y1="65" x2="120" y2="65" stroke="currentColor" stroke-width="1.6"/><line x1="80" y1="85" x2="120" y2="85" stroke="currentColor" stroke-width="1.6"/><path d="M60 175 h80" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
-          </div>
-          <h3>M-SERIA</h3>
-          <p class="offer-desc">Do magazynków karabinkowych M4/AK typu mid-cap i hi-cap. Uniwersalny profil gardzieli, wzmocniona podstawa.</p>
-          <ul class="offer-specs">
-            <li>Pojemność 120–450 BB</li>
-            <li>PETG, wytrzymały na upadki</li>
-            <li>4 kolory: OD, Tan, Black, Grey</li>
+        <article class="offer-lead reveal" data-reveal>
+          <svg class="offer-lead-diagram" viewBox="0 0 260 200" aria-hidden="true">
+            <circle cx="130" cy="100" r="72" fill="none" stroke="currentColor" stroke-width="2"/>
+            <circle cx="130" cy="100" r="14" fill="currentColor"/>
+            <line x1="130" y1="16" x2="130" y2="40" stroke="currentColor" stroke-width="2"/>
+            <line x1="130" y1="160" x2="130" y2="184" stroke="currentColor" stroke-width="2"/>
+            <line x1="46" y1="100" x2="70" y2="100" stroke="currentColor" stroke-width="2"/>
+            <line x1="190" y1="100" x2="214" y2="100" stroke="currentColor" stroke-width="2"/>
+            <line x1="130" y1="28" x2="130" y2="100" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 4" opacity=".6"/>
+          </svg>
+          <p class="offer-lead-kicker">Flagowy model — DRUM-SERIA</p>
+          <h3>Do magazynków bębnowych</h3>
+          <p class="offer-lead-desc">Lejek o dużej średnicy i mechanizm antyzatorowy własnej konstrukcji — bęben na 2000 kulek napełnisz jednym ciągłym ruchem, bez zacięć w połowie ładowania.</p>
+          <ul class="offer-lead-specs">
+            <li><span>Pojemność</span>1200–2500 BB</li>
+            <li><span>Materiał</span>PETG-CF, wzmocnienia w punktach krytycznych</li>
+            <li><span>Kolory</span>OD, Tan, Black, Grey</li>
           </ul>
         </article>
 
-        <article class="offer-card offer-card-featured reveal" data-reveal data-delay="1">
-          <div class="offer-badge">Najczęściej wybierany</div>
-          <div class="offer-visual">
-            <svg viewBox="0 0 200 200" aria-hidden="true"><circle cx="100" cy="100" r="55" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="100" cy="100" r="10" fill="currentColor"/><line x1="100" y1="45" x2="100" y2="60" stroke="currentColor" stroke-width="2"/><line x1="100" y1="140" x2="100" y2="155" stroke="currentColor" stroke-width="2"/><line x1="45" y1="100" x2="60" y2="100" stroke="currentColor" stroke-width="2"/><line x1="140" y1="100" x2="155" y2="100" stroke="currentColor" stroke-width="2"/></svg>
-          </div>
-          <h3>DRUM-SERIA</h3>
-          <p class="offer-desc">Pod magazynki bębnowe. Lejek o dużej średnicy, mechanizm antyzatorowy własnej konstrukcji.</p>
-          <ul class="offer-specs">
-            <li>Pojemność 1200–2500 BB</li>
-            <li>PETG-CF, wzmocnienia w punktach krytycznych</li>
-            <li>4 kolory: OD, Tan, Black, Grey</li>
-          </ul>
-        </article>
-
-        <article class="offer-card reveal" data-reveal data-delay="2">
-          <div class="offer-visual">
-            <svg viewBox="0 0 200 200" aria-hidden="true"><path d="M90 20 L110 20 L120 90 L80 90 Z" fill="none" stroke="currentColor" stroke-width="2"/><rect x="82" y="90" width="36" height="70" rx="4" fill="none" stroke="currentColor" stroke-width="2"/><path d="M65 175 h70" stroke="currentColor" stroke-width="2.4" stroke-linecap="square"/></svg>
-          </div>
-          <h3>P-SERIA</h3>
-          <p class="offer-desc">Kompaktowe ładowarki do magazynków pistoletowych GBB i AEP. Mieszczą się w kieszeni kamizelki.</p>
-          <ul class="offer-specs">
-            <li>Pojemność 40–90 BB</li>
-            <li>PETG, wersja low-profile</li>
-            <li>4 kolory: OD, Tan, Black, Grey</li>
-          </ul>
-        </article>
+        <div class="offer-list">
+          <article class="offer-row reveal" data-reveal data-delay="1">
+            <h3>M-SERIA</h3>
+            <p>Do magazynków karabinkowych M4/AK typu mid-cap i hi-cap. Uniwersalny profil gardzieli, wzmocniona podstawa.</p>
+            <ul>
+              <li>120–450 BB</li>
+              <li>PETG, wytrzymały na upadki</li>
+              <li>OD · Tan · Black · Grey</li>
+            </ul>
+          </article>
+          <article class="offer-row reveal" data-reveal data-delay="2">
+            <h3>P-SERIA</h3>
+            <p>Kompaktowe ładowarki do magazynków pistoletowych GBB i AEP. Mieszczą się w kieszeni kamizelki.</p>
+            <ul>
+              <li>40–90 BB</li>
+              <li>PETG, wersja low-profile</li>
+              <li>OD · Tan · Black · Grey</li>
+            </ul>
+          </article>
+        </div>
 
       </div>
     </div>
@@ -183,52 +174,40 @@
         <h2 class="reveal" data-reveal>Cennik</h2>
         <p class="section-sub reveal" data-reveal data-delay="1">Bez pośredników, bez narzutów sklepowych — cena prosto z warsztatu.</p>
       </div>
-      <div class="pricing-grid">
-
-        <div class="price-card reveal" data-reveal>
-          <div class="price-top">
-            <h3>P-SERIA</h3>
-            <p class="price-value"><span>39</span> zł</p>
-            <p class="price-note">za sztukę</p>
-          </div>
-          <ul class="price-list">
-            <li>Ładowarka pistoletowa</li>
-            <li>1 kolor do wyboru</li>
-            <li>Realizacja 24–48h</li>
-          </ul>
-          <a href="#kontakt" class="btn btn-outline">Zamów</a>
-        </div>
-
-        <div class="price-card price-card-featured reveal" data-reveal data-delay="1">
-          <div class="price-top">
-            <h3>M-SERIA</h3>
-            <p class="price-value"><span>59</span> zł</p>
-            <p class="price-note">za sztukę</p>
-          </div>
-          <ul class="price-list">
-            <li>Ładowarka karabinkowa</li>
-            <li>Dowolny kolor z palety</li>
-            <li>Realizacja 24–48h</li>
-            <li>Rabat 10% od 3 sztuk</li>
-          </ul>
-          <a href="#kontakt" class="btn btn-primary">Zamów</a>
-        </div>
-
-        <div class="price-card reveal" data-reveal data-delay="2">
-          <div class="price-top">
-            <h3>DRUM-SERIA</h3>
-            <p class="price-value"><span>89</span> zł</p>
-            <p class="price-note">za sztukę</p>
-          </div>
-          <ul class="price-list">
-            <li>Ładowarka do bębna</li>
-            <li>Dowolny kolor z palety</li>
-            <li>Realizacja 48–72h</li>
-          </ul>
-          <a href="#kontakt" class="btn btn-outline">Zamów</a>
-        </div>
-
-      </div>
+      <table class="price-table reveal" data-reveal>
+        <thead>
+          <tr>
+            <th scope="col">Model</th>
+            <th scope="col">Pojemność</th>
+            <th scope="col">Realizacja</th>
+            <th scope="col">Cena</th>
+            <th scope="col" class="sr-only">Zamówienie</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">P-SERIA<span>pistoletowa, 1 kolor do wyboru</span></th>
+            <td>40–90 BB</td>
+            <td>24–48h</td>
+            <td class="price-cell">39 zł</td>
+            <td><a href="#kontakt" class="btn btn-outline btn-row">Zamów</a></td>
+          </tr>
+          <tr class="price-row-primary">
+            <th scope="row">M-SERIA<span>karabinkowa, rabat 10% od 3 szt.</span></th>
+            <td>120–450 BB</td>
+            <td>24–48h</td>
+            <td class="price-cell">59 zł</td>
+            <td><a href="#kontakt" class="btn btn-primary btn-row">Zamów</a></td>
+          </tr>
+          <tr>
+            <th scope="row">DRUM-SERIA<span>bębnowa, PETG-CF</span></th>
+            <td>1200–2500 BB</td>
+            <td>48–72h</td>
+            <td class="price-cell">89 zł</td>
+            <td><a href="#kontakt" class="btn btn-outline btn-row">Zamów</a></td>
+          </tr>
+        </tbody>
+      </table>
       <p class="pricing-footnote reveal" data-reveal>Projekt niestandardowy pod Twój magazynek? <a href="#kontakt">Napisz</a> — wycena w 24h.</p>
     </div>
   </section>
@@ -243,12 +222,12 @@
     </div>
     <div class="gallery-grid wrap">
       <!-- Zdjęcia tymczasowe (Wikimedia Commons, licencje w stopce) — do podmiany na realne fotografie własnych produktów -->
-      <figure class="gallery-item reveal" data-reveal><div class="gallery-plate g-1" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Airsoft_BB_loader.JPG/960px-Airsoft_BB_loader.JPG')"><svg viewBox="0 0 100 100"><rect x="30" y="10" width="40" height="80" rx="4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div><figcaption>Prototyp speedloadera</figcaption></figure>
-      <figure class="gallery-item reveal" data-reveal data-delay="1"><div class="gallery-plate g-2" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Airsoft_G36C_magazine.JPG/960px-Airsoft_G36C_magazine.JPG')"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="30" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div><figcaption>Magazynek karabinkowy</figcaption></figure>
-      <figure class="gallery-item reveal" data-reveal data-delay="2"><div class="gallery-plate g-3" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/AirsoftRockField.jpg/960px-AirsoftRockField.jpg')"><svg viewBox="0 0 100 100"><path d="M35 15 L65 15 L70 60 L30 60 Z" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div><figcaption>Test na polu gry</figcaption></figure>
-      <figure class="gallery-item reveal" data-reveal><div class="gallery-plate g-4" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/3D_Printing.jpg/960px-3D_Printing.jpg')"><svg viewBox="0 0 100 100"><rect x="15" y="30" width="70" height="40" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div><figcaption>Warsztat — drukarki w pracy</figcaption></figure>
-      <figure class="gallery-item reveal" data-reveal data-delay="1"><div class="gallery-plate g-5" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6b/M_90.jpg')"><svg viewBox="0 0 100 100"><path d="M20 80 L50 20 L80 80" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div><figcaption>Gracz w akcji</figcaption></figure>
-      <figure class="gallery-item reveal" data-reveal data-delay="2"><div class="gallery-plate g-6" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Airsoft_assault_rifle_dual_magazine_holder_side.JPG/960px-Airsoft_assault_rifle_dual_magazine_holder_side.JPG')"><svg viewBox="0 0 100 100"><rect x="25" y="25" width="50" height="50" rx="10" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></div><figcaption>Uchwyt na magazynki</figcaption></figure>
+      <figure class="gallery-item gallery-item--tall reveal" data-reveal><div class="gallery-plate g-1" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Airsoft_BB_loader.JPG/960px-Airsoft_BB_loader.JPG')"></div><figcaption>Prototyp speedloadera</figcaption></figure>
+      <figure class="gallery-item reveal" data-reveal data-delay="1"><div class="gallery-plate g-2" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Airsoft_G36C_magazine.JPG/960px-Airsoft_G36C_magazine.JPG')"></div><figcaption>Magazynek karabinkowy</figcaption></figure>
+      <figure class="gallery-item gallery-item--wide reveal" data-reveal data-delay="2"><div class="gallery-plate g-3" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/AirsoftRockField.jpg/960px-AirsoftRockField.jpg')"></div><figcaption>Test na polu gry</figcaption></figure>
+      <figure class="gallery-item reveal" data-reveal><div class="gallery-plate g-4" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/3D_Printing.jpg/960px-3D_Printing.jpg')"></div><figcaption>Warsztat — drukarki w pracy</figcaption></figure>
+      <figure class="gallery-item gallery-item--tall reveal" data-reveal data-delay="1"><div class="gallery-plate g-5" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6b/M_90.jpg')"></div><figcaption>Gracz w akcji</figcaption></figure>
+      <figure class="gallery-item reveal" data-reveal data-delay="2"><div class="gallery-plate g-6" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Airsoft_assault_rifle_dual_magazine_holder_side.JPG/960px-Airsoft_assault_rifle_dual_magazine_holder_side.JPG')"></div><figcaption>Uchwyt na magazynki</figcaption></figure>
     </div>
   </section>
 
@@ -259,19 +238,21 @@
         <h2 class="reveal" data-reveal>Opinie graczy</h2>
         <p class="section-sub reveal" data-reveal data-delay="1">To gracze weryfikują sprzęt najlepiej.</p>
       </div>
-      <div class="testi-grid">
-        <blockquote class="testi-card reveal" data-reveal>
-          <p>„Zamówiłem ładowarkę do AK w czwartek, w sobotę grałem już z nią na FIA. Ładowanie magazynka zajmuje mi teraz sekundy, nie minuty.”</p>
-          <footer><span class="testi-name">Marek K.</span><span class="testi-role">gracz reenactment / MILSIM</span></footer>
-        </blockquote>
-        <blockquote class="testi-card reveal" data-reveal data-delay="1">
-          <p>„Drum-Seria to inny poziom — bęben na 2000 kulek napełniam bez zacięć, jednym ciągłym ruchem. Solidne wykonanie, czuć że robi to ktoś kto sam gra.”</p>
+      <div class="testi-layout">
+        <blockquote class="testi-lead reveal" data-reveal>
+          <p>„Drum-Seria to inny poziom — bęben na 2000 kulek napełniam bez zacięć, jednym ciągłym ruchem. Solidne wykonanie, czuć że robi to ktoś, kto sam gra.”</p>
           <footer><span class="testi-name">Ola W.</span><span class="testi-role">support gunner</span></footer>
         </blockquote>
-        <blockquote class="testi-card reveal" data-reveal data-delay="2">
-          <p>„Zamówienie, kontakt, realizacja — wszystko na czas i bez zbędnych pytań. Kupiłem już trzy sztuki dla całej drużyny.”</p>
-          <footer><span class="testi-name">Tomek Sz.</span><span class="testi-role">dowódca drużyny</span></footer>
-        </blockquote>
+        <div class="testi-minor">
+          <blockquote class="reveal" data-reveal data-delay="1">
+            <p>„Zamówiłem ładowarkę do AK w czwartek, w sobotę grałem już z nią na FIA. Ładowanie magazynka zajmuje sekundy, nie minuty.”</p>
+            <footer><span class="testi-name">Marek K.</span><span class="testi-role">gracz reenactment / MILSIM</span></footer>
+          </blockquote>
+          <blockquote class="reveal" data-reveal data-delay="2">
+            <p>„Zamówienie, kontakt, realizacja — wszystko na czas, bez zbędnych pytań. Kupiłem już trzy sztuki dla całej drużyny.”</p>
+            <footer><span class="testi-name">Tomek Sz.</span><span class="testi-role">dowódca drużyny</span></footer>
+          </blockquote>
+        </div>
       </div>
     </div>
   </section>

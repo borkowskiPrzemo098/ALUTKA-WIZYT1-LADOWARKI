@@ -70,33 +70,6 @@
     revealEls.forEach(el => el.classList.add('is-visible'));
   }
 
-  /* ---------- Animated stat counters ---------- */
-  const statEls = document.querySelectorAll('.stat-num[data-count]');
-  function animateCount(el) {
-    const target = parseInt(el.getAttribute('data-count'), 10) || 0;
-    if (reduceMotion) { el.textContent = target; return; }
-    const duration = 1400;
-    const start = performance.now();
-    function tick(now) {
-      const p = Math.min(1, (now - start) / duration);
-      const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.round(eased * target);
-      if (p < 1) requestAnimationFrame(tick);
-    }
-    requestAnimationFrame(tick);
-  }
-  if (statEls.length && 'IntersectionObserver' in window) {
-    const statIo = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateCount(entry.target);
-          statIo.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.6 });
-    statEls.forEach(el => statIo.observe(el));
-  }
-
   /* ---------- Contact form (static-site friendly demo handler) ---------- */
   const form = document.getElementById('contactForm');
   const status = document.getElementById('formStatus');
