@@ -332,10 +332,11 @@ p{ margin:0; }
   .price-rows{
     display:grid;
     grid-template-columns: minmax(180px,1.6fr) minmax(110px,1fr) minmax(110px,1fr) minmax(90px,auto) auto;
-    align-items:center;
+    align-items:stretch;
   }
   .price-row{ display:contents; }
   .price-row > *{
+    display:flex; align-items:center;
     padding:22px 20px; border-bottom:1px solid var(--line-soft);
   }
   .price-row:last-of-type > *{ border-bottom:none; }
@@ -349,7 +350,7 @@ p{ margin:0; }
     color:var(--fg-faint);
   }
   .price-label{ display:none; }
-  .btn-row{ justify-self:end; }
+  .price-col-action{ justify-content:flex-end; }
 }
 
 /* Mobile: each price-row is one self-contained card, identical internal structure every time */
@@ -369,7 +370,8 @@ p{ margin:0; }
     color:var(--fg-faint); margin-bottom:3px;
   }
   .price-col-price{ flex:0 0 auto; margin-left:auto; }
-  .btn-row{ flex:1 1 100%; width:100%; text-align:center; }
+  .price-col-action{ flex:1 1 100%; }
+  .btn-row{ width:100%; text-align:center; }
 }
 
 .price-col-name{
